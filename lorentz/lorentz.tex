@@ -6,10 +6,13 @@
 \usepackage{wrapfig}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
+\usepackage{icomma}
 
-\newcommand{\figcaption}[2]{\textbf{Fig. #1} #2}
+\newcommand{\parbreak}{\vspace{1cm}}
 
-\newcommand{\lorentzradical}{\sqrt{1 - \dfrac{V^2}{c^2}}}
+\newcommand{\figcaption}[2]{\scriptsize{\textbf{Fig. #1} #2}}
+
+\newcommand{\lorentzradical}{\sqrt{1 - \frac{V^2}{c^2}}}
 
 \begin{document}
 
@@ -20,17 +23,17 @@
 În mecanica clasică, conform transformărilor Galilei, se aplică invarianța
 intervalului spațial, adică dimensiunile corpurilor rămân constante la
 trecerea de la un SRI la altul.
-\par
+
 Intervalul temporal este de asemenea considerat invariant la trecerea
 de la un SRI la altul.
-\par
+
 Însă timpul și spațiul nu mai pot fi considerate mărimi absolute în teoria
 relativității creată de Einstein.
-\par
+
 Prin trecerea de la un SRI la altul, dimensiunile longitudinale ale corpurilor
 suferă modificări.
 
-\vspace{1cm}
+\parbreak
 
 De exemplu, considerăm un corp de formă liniară, precum o riglă, aflată pe axa
 $Ox$ în repaus și având lungimea $l_0$ în sistemul S, numit
@@ -51,7 +54,7 @@ măsurat cu un ceas solidar cu $S'$. Conform transformărilor Lorentz, obținem
 \]
 unde am notat \( \beta = \frac{V}{c} \). De aici rezultă
 \[ l' = l_0 \betalorentzradical \]
-\par
+
 Se observă că lungimea $l'$ măsurată în $S'$ este mai mică decât lungimea
 proprie $l_0$. Rigla a rămas identică cu ea însăși, însă rezultatul măsurării
 lungimii diferă de la un SRI la altul.
@@ -61,7 +64,6 @@ lungimii diferă de la un SRI la altul.
 {\Large\emph{Problemă rezolvată}}
 \vspace{0.5cm}
 
-\par
 Fie o riglă aflată în repaus într-un SRI $S'$, care este aflat în translație
 uniformă față de un SRI $S$. Să se exprime lungimea riglei \( l = x_2(t) - x_1(t) \)
 în referențialul $S$ în funcție de lungimea \( l' = l_0 \)
@@ -70,28 +72,27 @@ a riglei în sistemul $S'$.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{fig/rigla} \\
-    \figcaption{1.4}{Contractarea lungimilor. Rigla este solidară cu $S'$}
+    \figcaption{1}{Contractarea lungimilor. Rigla este solidară cu $S'$}
 \end{figure}
 
-\par
 Din \( x' = \dfrac{x - Vt}{\lorentzradical} \)
-rezultă \( x = x' \lorentzradical + Vt \). Atunci
+rezultă \( x = x' \lorentzradical + Vt \). Atunci:
 \begin{align*}
     l &= x_2' \lorentzradical + Vt - x_1' \lorentzradical - Vt \\
-    l &= (x_2' - x_1') \lorentzradical = l_0 \lorentzradical
+    l &= (x_2' - x_1') \lorentzradical = l_0 \lorentzradical < l_0
 \end{align*}
 
-\vspace{1cm}
+\parbreak
 
-\par
 Dimensiunile transversale ale corpurilor nu se modifică: \( y' = y \) și \( z' = z \).
-Astfel, volumul corpului se modifică doar în direcția mișcării.
+Astfel, volumul corpului se modifică doar în direcția mișcării:
 \[ \mathscr{V}_0 = xyz \]
 \[ \mathscr{V}' = x'y'z' = x\lorentzradical yz = \mathscr{V}_0 \lorentzradical \]
 
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
     \includegraphics[width=0.5\textwidth]{fig/turtit.png}
-    \figcaption{2}{Sfera se turtește, iar cubul devine paralelipiped}
+    \figcaption{2}{Sfera se turtește, iar cubul se transformă în paralelipiped}
 \end{wrapfigure}
 
 Privind o sferă dintr-un sistem de referință față de care se mișcă, aceasta
