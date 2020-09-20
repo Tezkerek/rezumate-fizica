@@ -1,18 +1,21 @@
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 \usepackage{icomma}
+\usepackage{physics}
 
 \newcommand{\parbreak}{\vspace{1cm}}
 
 \newcommand{\figcaption}[2]{\scriptsize{\textbf{Fig. #1} #2}}
 
 \newcommand{\lorentzradical}{\sqrt{1 - \frac{V^2}{c^2}}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
 
 \begin{document}
 
@@ -91,8 +94,8 @@ Astfel, volumul corpului se modifică doar în direcția mișcării:
 
 \begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{fig/turtit.png}
-    \figcaption{2}{Sfera se turtește, iar cubul se transformă în paralelipiped}
+    \includegraphics[width=0.4\textwidth]{fig/turtit.png}
+    \figcaption{2}{Sfera se turtește, iar cubul \linebreak se transformă în paralelipiped}
 \end{wrapfigure}
 
 Privind o sferă dintr-un sistem de referință față de care se mișcă, aceasta
@@ -149,13 +152,15 @@ de referință propriu.
 
 Dependența intervalului de timp de sistemul de referință nu este intuitivă în
 comparație cu fenomenele pe care le observăm zi de zi în regim nerelativist,
-când \( V \ll c \).  Un exemplu îl reprezintă prezența miuonilor la nivelul
-solului sau mării. Miuonii, care apar în atmosferă la altitudini de 10 km,
-datorită razelor cosmice ce pătrund în atmosfera planetei, au un timp de viață
-propriu -- cel măsurat în SRP -- extrem de scurt, \( \tau_0 = 2,2 \cdot 10^{-6} \)
-s. Având viteza \( V = 2,994 \cdot 10^8 \) m/s (valoare apropiată de viteza
-luminii), din calculul nerelativist al distanței rezultă că un miuon ar putea
-parcurge doar \( V\tau_0 = 658,7 \) m în intervalul de timp propriu, distanță
+când \( V \ll c \).
+
+Un exemplu îl reprezintă prezența miuonilor la nivelul solului sau mării.
+Miuonii, care apar în atmosferă la altitudini de 10 km, datorită razelor
+cosmice ce pătrund în atmosfera planetei, au un timp de viață propriu -- cel
+măsurat în SRP -- extrem de scurt, \( \tau_0 = 2,2 \cdot 10^{-6} \) s. Având
+viteza \( V = 2,994 \cdot 10^8 \) m/s (valoare apropiată de viteza luminii),
+din calculul nerelativist al distanței rezultă că un miuon ar putea parcurge
+doar \( V\tau_0 = 658,7 \) m în intervalul de timp propriu, distanță
 insuficientă pentru a ajunge la nivelul solului.  Deoarece observația se face
 în raport cu Pământul, trebuie să luăm în considerație intervalul de timp
 măsurat față de Pământ:
@@ -188,5 +193,155 @@ corpuri.
 În concluzie, pentru un observator aflat în mișcare față de locul unde se
 produce un fenomen, acesta se desfășoară mai lent decât pentru un observator
 aflat în repaus față de eveniment.
+
+Simultaneitatea a două evenimente este de asemenea dependentă de sistemul de
+referință față de care este descrisă mișcarea. Două evenimente simultane în
+$S$ nu sunt simultane în $S'$.
+
+Fie două evenimente simultane în $S$ în punctele $x_1$ și $x_2$ la momentul
+$t$. În $S'$, aflat în mișcare față de $S$, vom măsura timpii:
+\begin{equation*}
+    \begin{aligned}[t]
+        t_1'(x_1) = \frac{t - \frac{Vx_1}{c^2}}{\lorentzradical}
+    \end{aligned}
+    \qquad\qquad\qquad
+    \begin{aligned}[t]
+        t_2'(x_2) = \frac{t - \frac{Vx_2}{c^2}}{\lorentzradical}
+    \end{aligned}
+\end{equation*}
+
+Observate din $S'$, evenimentele nu mai apar simultane, cu excepția cazului în
+care \( x_1 = x_2 \), adică atunci când evenimentele coincid.
+
+Rolul principal al teoriei relativității este de a stabili
+\emph{invarianții relativiști}: mărimi cu proprietatea de a rămâne invariante
+la trecerea de la un SRI la altul. Printre aceștia se numără constantele
+universale, sarcina electrică, mărimile măsurate față de SRP etc.
+
+\section{Compunerea vitezelor}
+
+Vom exprima legile relativiste de transformare a vitezelor corpurilor dintr-un
+SRI în altul, pornind de la transformările Lorentz deduse anterior:
+\begin{equation*}
+    \begin{aligned}[t]
+        x = \frac{x' + Vt'}{\lorentzradical}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        y = y'
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        z = z'
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        t = \frac{t' + \frac{Vx'}{c^2}}{\lorentzradical}
+    \end{aligned}
+\end{equation*}
+
+Din relațiile de mai sus rezultă:
+\begin{equation*}
+    \begin{aligned}[t]
+        \dd x = \frac{\dd x' + V\dd t'}{\lorentzradical}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dd y = \dd y'
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dd z = \dd z'
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dd t = \frac{\dd t' + \frac{V\dd x'}{c^2}}{\lorentzradical}
+    \end{aligned}
+\end{equation*}
+
+Împărțim primele trei ecuații la cea de-a patra și obținem:
+\begin{equation*}
+    \begin{aligned}[t]
+        \dv{x}{t} = \frac{\dd x' + V\dd t'}{\dd t' + \frac{V\dd x'}{c^2}}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dv{y}{t} = \frac{\dd y'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dv{z}{t} = \frac{\dd z'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
+    \end{aligned}
+\end{equation*}
+sau:
+\begin{equation*}
+    \begin{aligned}[t]
+        \dv{x}{t} = \frac{\dv{x'}{t'} + V}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dv{y}{t} = \frac{\dv{y'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        \dv{z}{t} = \frac{\dv{z'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+    \end{aligned}
+\end{equation*}
+
+Rezultă astfel formulele de compunere a vitezelor în teoria relativității
+restrânse:
+\begin{equation*}
+    \begin{aligned}[t]
+        v_x = \frac{v_x' + V}{1 + \frac{V}{c^2}v_x'}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_y = \frac{v_y'\lorentzradical}{1 + \frac{V}{c^2}v_x'}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_z = \frac{v_z'\lorentzradical}{1 + \frac{V}{c^2}v_x'}
+    \end{aligned}
+\end{equation*}
+
+Pentru a obține formulele inverse, schimbăm accentele și înlocuim pe $V$ în
+$-V$:
+\begin{equation*}
+    \begin{aligned}[t]
+        v_x' = \frac{v_x - V}{1 - \frac{V}{c^2}v_x}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_y' = \frac{v_y\lorentzradical}{1 - \frac{V}{c^2}v_x}
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_z' = \frac{v_z\lorentzradical}{1 - \frac{V}{c^2}v_x}
+    \end{aligned}
+\end{equation*}
+
+Comparând formulele de mai sus cu cele clasice deduse din transformările
+Galilei
+\begin{equation*}
+    \begin{aligned}[t]
+        v_x = v_x' + V
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_y = v_y'
+    \end{aligned}\qquad\qquad
+    \begin{aligned}[t]
+        v_z = v_z'
+    \end{aligned}
+\end{equation*}
+se observă apariția numitorului \( \left( 1 + \frac{Vv_x'}{c^2} \right) \) la
+$v_x$, $v_y$ și $v_z$, și a radicalului Lorentz la numărătorul lui $v_y$ și al
+lui $v_z$.
+
+Pentru \( V \ll c \), avem \( \frac{V^2}{c^2} \ll 1 \) și astfel din
+transformările Lorentz obținem transformările Galilei din fizica clasică.
+
+Compunerea relativistă a vitezelor reconfirmă principiul conform căruia viteza
+luminii în vid $c$ este viteza maximă, și nu poate fi atinsă de corpuri și
+particule. Pentru \( V = c \), se obține:
+\begin{equation*}
+    \begin{aligned}
+        v_x &= \frac{v_x' + c}{1 + \frac{cv_x'}{c^2}} = c \\
+        v_x' &= \frac{v_x - c}{1 - \frac{cv_x}{c^2}} = -c
+    \end{aligned}
+\end{equation*}
+
+Un alt exemplu ar fi \( v_x' = c \). Conform formulelor clasice ale lui Galilei, am obține:
+\[ v_x = c + V > c \]
+Însă din transformările Lorentz ne rezultă:
+\[ v_x = \frac{c + V}{1 + \frac{Vc}{c^2}} = \frac{c + V}{c + V} \cdot c = c \]
+
+Dacă \( v_x' = c \) și \( V = c \), ar rezulta \( v_x = c + c = 2c \), ceea ce contrazice
+experiențele lui Michelson și Morley.
 
 \end{document}
