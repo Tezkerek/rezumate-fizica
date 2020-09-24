@@ -1,0 +1,29 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{icomma}
+\usepackage{physics}
+
+\newcommand{\parbreak}{\vspace{1cm}}
+
+\newcommand{\figcaption}[2]{\scriptsize{\textbf{Fig. #1} #2}}
+
+\newcommand{\lorentzradical}{\ensuremath{\sqrt{1 - \frac{V^2}{c^2}}}}
+
+\newenvironment{alignedeq}
+{\begin{equation*}\begin{aligned}}
+{\end{aligned}\end{equation*}}
+
+\begin{document}
+
+\input{section1}
+\input{section2}
+\input{section3}
+
+\end{document}
