@@ -65,9 +65,45 @@ Folosind ecuația:
     = 1 - \frac{1}{c^2}\cdot\frac{4v'^2}{\left(1 + \frac{v'^2}{c^2}\right)}
     = \left(\frac{1 - \frac{v'^2}{c^2}}{1 + \frac{v'^2}{c^2}}\right)
 \]
+
+\begin{wrapfigure}{r}{0pt}
+    \begin{tikzpicture}[scale=0.8]
+        \pgfmathsetmacro{\c}{299 792 458}
+        \begin{axis}[
+            width=6.5cm,
+            height=8cm,
+            xlabel=$v$,
+            ylabel=$m$,
+            samples=100,
+            ymax=8.5,
+            xtick={\c/2,\c},
+            ytick={1,2,...,8},
+            xticklabels={$0.5c$,$c$},
+            yticklabels={$m_0$,$2m_0$,$3m_0$,$4m_0$,$5m_0$,$6m_0$,$7m_0$,$8m_0$},
+        ]
+            \addplot [domain=0:\c] {1 / sqrt(1 - x^2 / \c^2)};
+            \addplot [Asymptote] coordinates {(\c, 0) (\c, 9)};
+        \end{axis}
+        \node [Origin] {$O$};
+    \end{tikzpicture}
+    \caption{Dependența $m = f(v)$.}
+\end{wrapfigure}
+
 se obține:
-\begin{alignedeq}
-    m_0 &= m_1\sqrt{1 - \frac{v_1^2}{c^2}} \\
-    m_1 &= \frac{m_0}{\sqrt{1 - \frac{v_1^2}{c^2}}}
-\end{alignedeq}
+\[
+    \begin{aligned}
+        m_0 &= m_1\sqrt{1 - \frac{v_1^2}{c^2}} \\
+        m_1 &= \frac{m_0}{\sqrt{1 - \frac{v_1^2}{c^2}}}
+    \end{aligned}
+\]
+
+Așadar, dacă un corp are \emph{masa de repaus} $m_0$, atunci când se deplasează cu
+viteza $v$ va avea masa:
+{
+    \color{\accentcolor}
+    \[ m = \frac{m_0}{\lorentzradical} \]
+}
+
+Pentru \( \frac{v}{c} \rightarrow 0 \), rezultă \( m \rightarrow m_0 \), adică, în
+aproximația newtoniană, masa $m$ poate fi confundată cu masa de repaus $m_0$.
 

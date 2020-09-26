@@ -1,26 +1,62 @@
+%! TEX program = lualatex
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{microtype}
 \usepackage{indentfirst}
+\usepackage{polyglossia}
 \usepackage{graphicx}
+\usepackage[font=footnotesize, labelfont=bf]{caption}
 \usepackage{wrapfig}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 \usepackage{icomma}
 \usepackage{physics}
+\usepackage{pgfplots}
+
+\setdefaultlanguage{romanian}
+
+\addto\captionsromanian{
+    \renewcommand{\figurename}{Fig.}
+}
 
 \newcommand{\parbreak}{\vspace{1cm}}
-
-\newcommand{\figcaption}[2]{\scriptsize{\textbf{Fig. #1} #2}}
-
 \newcommand{\lorentzradical}{\ensuremath{\sqrt{1 - \frac{V^2}{c^2}}}}
+\newcommand{\accentcolor}{teal}
 
-\newenvironment{alignedeq}
-{\begin{equation*}\begin{aligned}}
-{\end{aligned}\end{equation*}}
+\pgfplotsset{
+    compat=1.7,
+    axis lines=left,
+    axis line style={shorten >=-15pt, shorten <=-15pt},
+    scaled ticks=false,
+    x label style={at={(axis description cs:(1.15, 0)}},
+    y label style={at={(axis description cs:(0, 1.1)},rotate=-90},
+    every axis plot/.append style={
+        ultra thick,
+        color=\accentcolor,
+    },
+    Asymptote/.style={
+        gray,
+        dotted,
+        mark=none,
+    },
+}
+\tikzset{
+    Origin/.style={
+        font=\scriptsize,
+        at={(-0.25, -0.25)},
+    }
+}
+
+
+\title{Elemente de cinematică și dinamică relativistă}
+\author{Andrei Ancuța}
+\date{}
 
 \begin{document}
+
+\maketitle
+\tableofcontents
 
 \input{section1}
 \input{section2}
