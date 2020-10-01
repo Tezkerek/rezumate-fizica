@@ -1,4 +1,4 @@
-\section{Cinematica relativistă. Consecințele cinematice \\ ale transformărilor Lorentz}
+\section{Cinematica relativistă. Consecințele cinematice ale transformărilor Lorentz}
 
 \subsection{Contracția relativistă a lungimilor}
 
@@ -41,29 +41,6 @@ Se observă că lungimea $l'$ măsurată în $S'$ este mai mică decât lungimea
 proprie $l_0$. Rigla a rămas identică cu ea însăși, însă rezultatul măsurării
 lungimii diferă de la un SRI la altul.
 
-\pagebreak
-
-\subsubsection*{Problemă rezolvată}
-\vspace{0.5cm}
-
-Fie o riglă aflată în repaus într-un SRI $S'$, care este aflat în translație
-uniformă față de un SRI $S$. Să se exprime lungimea riglei \( l = x_2(t) - x_1(t) \)
-în referențialul $S$ în funcție de lungimea \( l' = l_0 \)
-a riglei în sistemul $S'$.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{fig/rigla} \\
-    \caption{Contractarea lungimilor. Rigla este solidară cu $S'$}
-\end{figure}
-
-Din \( x' = \dfrac{x - Vt}{\lorentzradical} \)
-rezultă \( x = x' \lorentzradical + Vt \). Atunci:
-\begin{align*}
-    l &= x_2' \lorentzradical + Vt - x_1' \lorentzradical - Vt \\
-    l &= (x_2' - x_1') \lorentzradical = l_0 \lorentzradical < l_0
-\end{align*}
-
 \parbreak
 
 Dimensiunile transversale ale corpurilor nu se modifică: \( y' = y \) și \( z' = z \).
@@ -73,7 +50,7 @@ Astfel, volumul corpului se modifică doar în direcția mișcării:
 
 \begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.4\textwidth]{fig/turtit.png}
+    \includegraphics[width=0.4\textwidth]{fig/turtit}
     \caption{Sfera se turtește, iar cubul \linebreak se transformă în paralelipiped}
 \end{wrapfigure}
 
@@ -99,6 +76,7 @@ relația clasică \( l' = l_0 \).
 Pentru \( V > c \), radicalul lui Lorentz devine imaginar, iar noțiunea de lungime
 își pierde sensul.
 
+\pagebreak
 
 \subsection{Dilatarea relativistă a timpului}
 Pe semiaxa $Ox$ a sistemului $S$, considerăm un eveniment temporar cu durata
@@ -129,33 +107,31 @@ de referință propriu.
 
 \parbreak
 
-Dependența intervalului de timp de sistemul de referință nu este intuitivă în
-comparație cu fenomenele pe care le observăm zi de zi în regim nerelativist,
-când \( V \ll c \).
-
-Un exemplu îl reprezintă prezența miuonilor la nivelul solului sau mării.
-Miuonii, care apar în atmosferă la altitudini de 10 km, datorită razelor
-cosmice ce pătrund în atmosfera planetei, au un timp de viață propriu -- cel
-măsurat în SRP -- extrem de scurt, \( \tau_0 = 2,2 \cdot 10^{-6} \) s. Având
-viteza \( V = 2,994 \cdot 10^8 \) m/s (valoare apropiată de viteza luminii),
-din calculul nerelativist al distanței rezultă că un miuon ar putea parcurge
-doar \( V\tau_0 = 658,7 \) m în intervalul de timp propriu, distanță
-insuficientă pentru a ajunge la nivelul solului.  Deoarece observația se face
-în raport cu Pământul, trebuie să luăm în considerație intervalul de timp
-măsurat față de Pământ:
-
-\[
-    \tau = \frac{\tau_0}{\lorentzradical}
-    = \frac{2,2 \cdot 10^{-6}}{\sqrt{1 - \left( \frac{2,994}{2,9979} \right)^2}}
-    = 43,14 \cdot 10^{-6} ~ \mathrm{s}
-\]
-
-Calculând acum distanța parcursă de miuon față de Pământ, obținem:
-\[ D = c\tau = 12,933 ~ \mathrm{km} \]
-
-Rezultă că miuonul poate fi reperat la nivelul solului și chiar al mării.
-
-\pagebreak
+%Dependența intervalului de timp de sistemul de referință nu este intuitivă în
+%comparație cu fenomenele pe care le observăm zi de zi în regim nerelativist,
+%când \( V \ll c \).
+%
+%Un exemplu îl reprezintă prezența miuonilor la nivelul solului sau mării.
+%Miuonii, care apar în atmosferă la altitudini de 10 km, datorită razelor
+%cosmice ce pătrund în atmosfera planetei, au un timp de viață propriu -- cel
+%măsurat în SRP -- extrem de scurt, \( \tau_0 = 2,2 \cdot 10^{-6} ~ \mathrm{s} \).
+%Având viteza \( V = 2,994 \cdot 10^8 \) m/s (valoare apropiată de viteza
+%luminii), din calculul nerelativist al distanței rezultă că un miuon ar putea
+%parcurge doar \( V\tau_0 = 658,7 \) m în intervalul de timp propriu, distanță
+%insuficientă pentru a ajunge la nivelul solului.  Deoarece observația se face
+%în raport cu Pământul, trebuie să luăm în considerație intervalul de timp
+%măsurat față de Pământ:
+%
+%\[
+%    \tau = \frac{\tau_0}{\lorentzradical}
+%    = \frac{2,2 \cdot 10^{-6}}{\sqrt{1 - \left( \frac{2,994}{2,9979} \right)^2}}
+%    = 43,14 \cdot 10^{-6} ~ \mathrm{s}
+%\]
+%
+%Calculând acum distanța parcursă de miuon față de Pământ, obținem:
+%\[ D = c\tau = 12,933 ~ \mathrm{km} \]
+%
+%Rezultă că miuonul poate fi reperat la nivelul solului și chiar al mării.
 
 Pentru \( V \ll c \) se obține \( \tau = \tau_0 \), ca în mecanica clasică.
 

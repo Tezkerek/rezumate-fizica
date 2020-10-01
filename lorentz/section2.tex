@@ -36,25 +36,25 @@ Din relațiile de mai sus rezultă:
 Împărțim primele trei ecuații la cea de-a patra și obținem:
 \begin{equation*}
     \begin{aligned}[t]
-        \dv{x}{t} = \frac{\dd x' + V\dd t'}{\dd t' + \frac{V\dd x'}{c^2}}
+        \diff{x}{t} = \frac{\dd x' + V\dd t'}{\dd t' + \frac{V\dd x'}{c^2}}
     \end{aligned}\qquad\qquad
     \begin{aligned}[t]
-        \dv{y}{t} = \frac{\dd y'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
+        \diff{y}{t} = \frac{\dd y'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
     \end{aligned}\qquad\qquad
     \begin{aligned}[t]
-        \dv{z}{t} = \frac{\dd z'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
+        \diff{z}{t} = \frac{\dd z'\lorentzradical}{\dd t' + \frac{V\dd x'}{c^2}}
     \end{aligned}
 \end{equation*}
 sau:
 \begin{equation*}
     \begin{aligned}[t]
-        \dv{x}{t} = \frac{\dv{x'}{t'} + V}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+        \diff{x}{t} = \frac{\diff{x'}{t'} + V}{1 + \frac{V}{c^2}\diff{x'}{t'}}
     \end{aligned}\qquad\qquad
     \begin{aligned}[t]
-        \dv{y}{t} = \frac{\dv{y'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+        \diff{y}{t} = \frac{\diff{y'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\diff{x'}{t'}}
     \end{aligned}\qquad\qquad
     \begin{aligned}[t]
-        \dv{z}{t} = \frac{\dv{z'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\dv{x'}{t'}}
+        \diff{z}{t} = \frac{\diff{z'}{t'}\lorentzradical}{1 + \frac{V}{c^2}\diff{x'}{t'}}
     \end{aligned}
 \end{equation*}
 
@@ -124,28 +124,3 @@ Un alt exemplu ar fi \( v_x' = c \). Conform formulelor clasice ale lui Galilei,
 
 Dacă \( v_x' = c \) și \( V = c \), ar rezulta \( v_x = c + c = 2c \), ceea ce
 contrazice experiențele lui Michelson și Morley.
-
-\pagebreak
-
-\subsubsection*{Problemă rezolvată}
-
-O navă cosmică, îndepărtându-se de Pământ cu viteza de $0,9c$, lansează un
-vehicul cosmic pe aceeași direcție cu mișcarea ei. Viteza vehiculului este
-$0,9c$ față de navă ($c = 2,99792 \cdot 10^8$  m/s). Care este viteza
-vehiculului cosmic în raport cu Pământul?
-
-\parbreak
-
-Considerăm $S$ referențialul legat de Pământ, $S'$ referențialul legat de navă,
-$v$ viteza vehiculului față de Pământ, $v'$ viteza vehiculului față de navă, și
-$V$ viteza navei față de Pământ. Rezultă că legea de compunere relativistă a
-vitezelor are forma:
-\[ v = \frac{v' + V}{1 + \frac{Vv'}{c^2}} \]
-
-Calculând, obținem:
-\[ v = \frac{0,9c + 0,9c}{1 + \frac{0,9^2 c^2}{c^2}} = 0,994c = 297993 ~ \mathrm{km/s} \]
-
-Dacă am fi folosit transformările Galilei pentru calculul nerelativist al
-vitezei, am fi obținut o viteză a vehiculului față de Pământ imposibilă, egală
-cu $1,8c$.
-

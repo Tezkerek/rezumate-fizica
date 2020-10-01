@@ -5,13 +5,13 @@
 \usepackage{microtype}
 \usepackage{indentfirst}
 \usepackage{polyglossia}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
 \usepackage{graphicx}
 \usepackage[font=footnotesize, labelfont=bf]{caption}
 \usepackage{wrapfig}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 \usepackage{icomma}
-\usepackage{physics}
 \usepackage{pgfplots}
 
 \setdefaultlanguage{romanian}
@@ -20,9 +20,16 @@
     \renewcommand{\figurename}{Fig.}
 }
 
+% Enable usage of \\ in sections
+\pdfstringdefDisableCommands{%
+    \def\\{}%
+}
+
 \newcommand{\parbreak}{\vspace{1cm}}
 \newcommand{\lorentzradical}{\ensuremath{\sqrt{1 - \frac{V^2}{c^2}}}}
-\newcommand{\accentcolor}{teal}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\accentcolor}{magenta}
 
 \pgfplotsset{
     compat=1.7,
@@ -50,7 +57,8 @@
 
 
 \title{Elemente de cinematică și dinamică relativistă}
-\author{Andrei Ancuța}
+\author{Andrei Ancuța \\ Liceul Teoretic de Informatică „Grigore Moisil” \\
+clasa a XII-a B}
 \date{}
 
 \begin{document}
@@ -61,5 +69,16 @@
 \input{section1}
 \input{section2}
 \input{section3}
+\clearpage
+\input{section4}
+
+\clearpage
+
+\section*{Bibliografie}
+\begin{itemize}
+    \item Manualul de fizică pentru clasa a XII-a \\
+        Cleopatra Gherbanovschi, Nicolae Gherbanovschi \\
+        Editura NICULESCU ABC, 2007
+\end{itemize}
 
 \end{document}

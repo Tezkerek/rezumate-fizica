@@ -1,7 +1,7 @@
 \section{Principiul fundamental al dinamicii}
 
 În mecanica newtoniană, legea dinamicii:
-\[ m\vec{a} = m\dv{\vec{v}}{t} = \vec{F} \]
+\[ m\vec{a} = m\diff{\vec{v}}{t} = \vec{F} \]
 are aceeași formă în orice SRI. De aici rezultă că dacă asupra unui corp se
 acționează cu o forță constantă un timp îndelungat, viteza acestuia poate
 crește oricât de mult.
@@ -15,7 +15,7 @@ ale corpurilor.
 
 La baza dinamicii relativiste se află legea fundamentală a mecanicii newtoniene,
 scrisă sub forma:
-\[ \dv{\vec{p}}{t} = \vec{F} \]
+\[ \diff{\vec{p}}{t} = \vec{F} \]
 
 În relația de definiție a impulsului \( \vec{p} = m\vec{v} \), masa $m$ nu mai
 este un factor de proporționalitate constant între impuls și viteză, ci depinde
@@ -24,7 +24,13 @@ de viteza corpului.
 Pentru a stabili dependența masei inerte în raport cu viteza corpului, vom folosi
 formulele relativiste de compunere a vitezelor și legea conservării impulsului.
 
-\pagebreak
+\parbreak
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/ciocnire}
+    \caption{Ciocnirea inelastică a două corpuri în raport cu S și S'}
+\end{wrapfigure}
 
 Considerăm o ciocnire inelastică în raport cu un referențial $S$ și un
 referențial $S'$, aflat în mișcare față de $S$ cu viteza $v'$. Cele două
@@ -39,11 +45,13 @@ Conform formulelor de compunere a vitezelor, avem:
     \begin{aligned}[t]
         v_1 = \frac{v' + v'}{1 + \frac{v'}{c^2}v'} = \frac{2v'}{1 + \frac{v'^2}{c^2}}
     \end{aligned}
-    \qquad\qquad\qquad
+    \qquad
     \begin{aligned}[t]
         v_2 = \frac{v' - v'}{1 + \frac{v'}{c^2}v'} = 0
     \end{aligned}
 \end{equation*}
+
+\clearpage
 
 Înlocuind în legea conservării impulsului în raport cu $S$:
 \[ m_1 v_1 + m_2 v_2 = (m_1 + m_2) v' \]
@@ -106,4 +114,3 @@ viteza $v$ va avea masa:
 
 Pentru \( \frac{v}{c} \rightarrow 0 \), rezultă \( m \rightarrow m_0 \), adică, în
 aproximația newtoniană, masa $m$ poate fi confundată cu masa de repaus $m_0$.
-
