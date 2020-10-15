@@ -13,6 +13,7 @@
 \usepackage{mathrsfs}
 \usepackage{icomma}
 \usepackage{pgfplots}
+\usepackage{titling}
 
 \setdefaultlanguage{romanian}
 
@@ -25,6 +26,14 @@
     \def\\{}%
 }
 
+\newcommand{\mktitle}{%
+    \noindent
+    {\small\theauthor}
+
+    \begin{center}
+        \LARGE\thetitle
+    \end{center}
+}
 \newcommand{\parbreak}{\vspace{1cm}}
 \newcommand{\lorentzradical}{\ensuremath{\sqrt{1 - \frac{V^2}{c^2}}}}
 \newcommand{\dd}{\mathrm{d}}
@@ -55,15 +64,13 @@
     }
 }
 
-
 \title{Elemente de cinematică și dinamică relativistă}
-\author{Andrei Ancuța \\ Liceul Teoretic de Informatică „Grigore Moisil” \\
+\author{Liceul Teoretic de Informatică „Grigore Moisil”, Iași \\ Andrei Ancuța \\
 clasa a XII-a B}
-\date{}
 
 \begin{document}
 
-\maketitle
+\mktitle
 \tableofcontents
 
 \input{section1}
@@ -78,7 +85,8 @@ clasa a XII-a B}
 \begin{itemize}
     \item Manualul de fizică pentru clasa a XII-a \\
         Cleopatra Gherbanovschi, Nicolae Gherbanovschi \\
-        Editura NICULESCU ABC, 2007
+        Editura NICULESCU ABC \\
+        2016
 \end{itemize}
 
 \end{document}
