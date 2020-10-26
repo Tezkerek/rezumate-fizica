@@ -1,0 +1,104 @@
+%! TEX program = lualatex
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{polyglossia}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{graphicx}
+\usepackage[font=footnotesize, labelfont=bf]{caption}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{icomma}
+\usepackage{pgfplots}
+\usepackage{titling}
+
+\setdefaultlanguage{romanian}
+
+\addto\captionsromanian{
+    \renewcommand{\figurename}{Fig.}
+}
+
+% Enable usage of \\ in sections
+\pdfstringdefDisableCommands{%
+    \def\\{}%
+}
+
+\newcommand{\mktitle}{%
+    \noindent
+    {\small\theauthor}
+
+    \begin{center}
+        \LARGE\thetitle
+    \end{center}
+}
+\newcommand{\parbreak}{\vspace{1cm}}
+\newcommand{\lorentzradical}{\ensuremath{\sqrt{1 - \frac{V^2}{c^2}}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\accentcolor}{magenta}
+
+\pgfplotsset{
+    compat=1.7,
+    axis lines=left,
+    axis line style={shorten >=-15pt, shorten <=-15pt},
+    scaled ticks=false,
+    x label style={at={(axis description cs:(1.15, 0)}},
+    y label style={at={(axis description cs:(0, 1.1)},rotate=-90},
+    every axis plot/.append style={
+        ultra thick,
+        color=\accentcolor,
+    },
+    Asymptote/.style={
+        gray,
+        dotted,
+        mark=none,
+    },
+}
+\tikzset{
+    Origin/.style={
+        font=\scriptsize,
+        at={(-0.25, -0.25)},
+    }
+}
+
+\title{Elemente de fizică cuantică}
+\author{Liceul Teoretic de Informatică „Grigore Moisil”, Iași \\ Andrei Ancuța \\
+clasa a XII-a B}
+
+\begin{document}
+
+\mktitle
+\tableofcontents
+
+\parbreak
+
+Deoarece este o radiație electromagnetică, lumina posedă proprietăți
+ondulatorii și corpusculare. Aspectul ondulatoriu se manifestă prin
+fenomenele de interferență, difracție, și polarizare. Natura corpusculară
+a radiației electromagnetice este implicată în efectul fotoelectric și în
+efectul Compton.
+
+Vom demonstra că aceste două proprietăți nu se exclud reciproc, ci
+trebuie considerate ca două caracteristici diferite ale radiației
+electromagnetice.
+
+\emph{Optica fotonică} studiază natura fenomenelor luminoase și interacția
+radiațiilor luminoase cu substanța, sub aspectul corpuscular (fotonic).
+
+\input{section1}
+\input{section2}
+
+\clearpage
+
+\section*{Bibliografie}
+\begin{itemize}
+    \item Manualul de fizică pentru clasa a XII-a \\
+        Cleopatra Gherbanovschi, Nicolae Gherbanovschi \\
+        Editura NICULESCU ABC \\
+        2016
+\end{itemize}
+
+\end{document}
