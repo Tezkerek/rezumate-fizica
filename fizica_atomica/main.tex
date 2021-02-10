@@ -1,0 +1,63 @@
+%! TEX program = lualatex
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{polyglossia}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{graphicx}
+\usepackage[font=footnotesize, labelfont=bf]{caption}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{icomma}
+\usepackage{titling}
+\usepackage{enumitem}
+
+\setdefaultlanguage{romanian}
+
+\addto\captionsromanian{
+    \renewcommand{\figurename}{Fig.}
+}
+
+% Enable usage of \\ in sections
+\pdfstringdefDisableCommands{%
+    \def\\{}%
+}
+
+\newcommand{\mktitle}{%
+    \noindent
+    {\small\theauthor}
+
+    \begin{center}
+        \LARGE\thetitle
+    \end{center}
+}
+\newcommand{\parbreak}{\vspace{1cm}}
+\newcommand{\unit}[1]{~ \mathrm{#1}}
+
+\title{Fizica atomică}
+\author{Andrei Ancuța \\ clasa a XII-a B \\
+Liceul Teoretic de Informatică „Grigore Moisil”, Iași}
+
+\begin{document}
+
+\mktitle
+\tableofcontents
+
+\input{section1}
+\input{section2}
+
+\clearpage
+
+\section*{Bibliografie}
+\begin{itemize}
+    \item Manualul de fizică pentru clasa a XII-a, F1 \\
+        Cleopatra Gherbanovschi, Nicolae Gherbanovschi \\
+        Editura NICULESCU ABC \\
+        2016
+\end{itemize}
+
+\end{document}
