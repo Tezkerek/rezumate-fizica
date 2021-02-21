@@ -20,3 +20,147 @@ Energia pierdută va fi transferată atomului ciocnit, care trece într-o
 \emph{stare excitată}. Se constată, pe cale experimentală, că atomul poate
 primi energie numai în anumite valori bine determinate.
 \emph{Atomul poate avea numai anumite stări (discrete) de energie}.
+
+\emph{Cuanta} de radiație este unitatea structurală de bază a câmpurilor ce
+poate fi emisă sau absorbită de un sistem fizic (molecular, atomic, nuclear
+etc.). De exemplu, fotonul pentru câmpul electromagnetic. Energia unei cuante
+de radiație se mai numește \emph{cuantă de energie}.
+
+\emph{Cuantificarea} este procedeul mecanicii cuantice prin care se impune ca
+mărimile fizice ce caracterizează sistemul de particule să ia doar valori
+discrete. De exemplu, energia, impulsul, momentul cinetic etc.
+
+S-a constatat că intensitatea și frecvența radiației emise cresc odată cu
+energia de excitare, raportul energie-frecvență fiind constanta lui Planck
+(numită și \emph{cuantă de acțiune}):
+\[ \frac{E}{\nu} = h = 6,626075 \cdot 10^{-34} ~ \mathrm{J \cdot s} \]
+
+Se poate scrie că energia radiațiilor emise de atomii care se dezexcită este
+proporțională cu frecvența:
+\[ E = h\nu \]
+
+În conceperea modelului cuantificat, au fost emise cele două postulate ale lui
+Bohr:
+\begin{enumerate}[label=\Roman*.]
+    \item Atomii și sistemele atomice se pot găsi timp îndelungat numai în
+        stări bine determinate, numite stări staționare, în care nu emit și nu
+        absorb energie. \\
+        Energia sistemului în aceste stări este cuantificată, adică ia valori
+        ce alcătuiesc un șir discontinuu: \( E_1, E_2, ..., E_n \).
+    \item Atomii emit sau absorb radiație electromagnetică doar la trecerea
+        dintr-o stare staționară $m$, caracterizată de energia $E_m$, în altă
+        stare staționară $n$, caracterizată de energia $E_n$. \\
+        Frecvența radiației emise sau absorbite într-o astfel de tranziție este
+        dată de relația:
+        \[ h\nu_{mn} = E_m - E_n \]
+        Acest postulat explică spectrele de linii ale radiațiilor emise de
+        atomii de hidrogen.
+\end{enumerate}
+
+\subsection{%
+    Cuantificarea distanțelor electronului față de nucleu%
+    \texorpdfstring{ ($r_n$)}{}, a vitezelor lui pe orbita
+    circulară\texorpdfstring{ ($v_n$)}{}, a impulsului%
+    \texorpdfstring{ ($p_n$)}{}, și a energiei totale%
+    \texorpdfstring{ ($E_n$)}{}
+}
+
+Aceste mărimi pot fi obținute considerând că forța coulombiană este o forță de
+natură centripetă:
+\begin{equation}
+    \frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{mv^2}{r}
+    \label{eq:2}
+\end{equation}
+și că electronului i se poate asocia o undă cu lungimea de undă
+\( \lambda_B = \frac{h}{p} \).
+
+Pot exista numai acele orbite ale electronului în atom pentru care este
+satisfăcută condiția existenței undelor de Broglie staționare. Pentru aceasta,
+lungimea orbitei circulare trebuie să cuprindă un număr întreg de lungimi de
+undă, adică exact \emph{condiția de cuantificare a momentului cinetic al
+mișcării electronului pe o orbită staționară}:
+\[ 2\pi r = n\lambda_B = \frac{nh}{mv} \]
+\begin{center}
+    sau
+\end{center}
+\begin{equation}
+    mvr = n\frac{h}{2\pi} = n\overline{h}, ~ n \in \mathbb{N}^*
+    \label{eq:3}
+\end{equation}
+unde $\overline{h}$ se numește constanta Planck redusă (sau constanta Dirac).
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.35\textwidth]{fig/moment_cinetic}
+    \caption{Momentul cinetic al punctului material în mișcarea circulară}
+\end{wrapfigure}
+
+\emph{Momentul cinetic} (sau \emph{moment al impulsului}) $\vec{L}$ este
+analogul impulsului în mișcarea de rotație. Este definit ca produsul vectorial
+dintre vectorul de poziție $\vec{r}$ al originii vectorului impuls, față de
+centrul de rotație, și impulsul punctului material $\vec{p} = m\vec{v}$:
+\[ \vec{L} = \vec{r} \times \vec{p} = \vec{r} \times m\vec{v} \]
+
+Momentul cinetic este un vector cu modulul \( L = rp\sin(\vec{r}, m\vec{v}) \).
+În mișcarea circulară, \( \vec{r} \perp m\vec{v} \), deci $L = rmv$. Se măsoară
+în SI în kg \cdot\ m$^2$s$^{-1}$ = J \cdot s.
+
+\clearpage
+
+Postulatele lui Bohr nu decurg din niciun principiu al fizicii clasice, ci se
+bazează doar pe fizica cuantică. Conform condiției de cuantificare a lui Bohr,
+electronul se poate mișca în jurul nucleului doar pe acele orbite pentru care
+$L$ este un multiplu al lui $\overline{h}$.
+
+Din relațiile \eqref{eq:2} și \eqref{eq:3} pot fi deduse expresiile cuantificate ale $r_n$,
+$v_n$, $p_n$, $E_n$:
+\begin{align*}
+    \frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{mv^2}{r}
+    &\Rightarrow v^2 = \frac{e^2}{4\pi\varepsilon_0 rm}
+    \\
+    rmv = n\frac{h}{2\pi} &\Rightarrow v^2 = \frac{n^2 h^2}{4\pi^2 m^2 r^2}
+    \Rightarrow \boxed{v_n = \frac{nh}{2\pi mr_n}}
+\end{align*}
+
+Din aceste două exprimări ale $v^2$ rezultă
+\( \frac{e^2}{4\pi\varepsilon_0 rm} = \frac{n^2 h^2}{4\pi^2 m^2 r^2} \), de
+unde se obține:
+\[
+    \boxed{r_n = \frac{\varepsilon_0 h^2}{\pi me^2} n^2}
+    \Rightarrow \boxed{v_n = \frac{e^2}{2\varepsilon_0 h} \frac{1}{n}}
+\]
+\[
+    p_n = mv^n \Rightarrow
+    \boxed{p_n = \frac{me^2}{2\varepsilon_0h} \frac{1}{n}}
+\]
+
+Din \eqref{eq:1} se obține:
+\begin{equation}
+    E_n = -\frac{e^2}{8\pi\varepsilon_0 r_n}
+    \Rightarrow \boxed{E_n = -\frac{me^4}{8\varepsilon_0^2 h^2} \frac{1}{n^2}}
+    \label{eq:4}
+\end{equation}
+
+Aplicăm expresiile deduse atomului de hidrogen $^1_1$H.
+Pentru $n = 1$, raza primei orbite Bohr este:
+\begin{equation}
+    r_1 = \frac{\varepsilon_0 h^2}{\pi m e^2}, ~\text{iar}~ r_n = r_1n^2
+    \label{eq:5}
+\end{equation}
+Orbitele neradiante permise au deci razele $r_1$, $4r_1$, $9r_1$ etc.
+
+Știind
+\begin{align*}
+    \varepsilon_0 &= \SI{8,85d-12}{\coulomb\tothe{2}\per\newton\per\metre\tothe{2}}
+    \hspace{0.75cm}
+    &h &= \SI{6,62d-34}{\joule\cdot\second}
+    \\
+    m &= \SI{9,11d-31}{\kilogram}
+    \hspace{0.75cm}
+    &e &=\SI{1,60d-19}{\coulomb}
+\end{align*}
+se obține \( r_1 = \SI{0,53d-10}{\metre} \), valoare aflată în concordanță cu
+diametrele atomice estimate prin alte metode.
+
+Conform \eqref{eq:5}, distanța dintre două orbite consecutive crește odată cu
+îndepărtarea de nucleu.
