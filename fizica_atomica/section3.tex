@@ -112,8 +112,8 @@ bazează doar pe fizica cuantică. Conform condiției de cuantificare a lui Bohr
 electronul se poate mișca în jurul nucleului doar pe acele orbite pentru care
 $L$ este un multiplu al lui $\overline{h}$.
 
-Din relațiile \eqref{eq:2} și \eqref{eq:3} pot fi deduse expresiile cuantificate ale $r_n$,
-$v_n$, $p_n$, $E_n$:
+Din relațiile \eqref{eq:2} și \eqref{eq:3} pot fi deduse expresiile
+cuantificate ale $r_n$, $v_n$, $p_n$, $E_n$:
 \begin{align*}
     \frac{e^2}{4\pi\varepsilon_0 r^2} = \frac{mv^2}{r}
     &\Rightarrow v^2 = \frac{e^2}{4\pi\varepsilon_0 rm}
@@ -259,13 +259,80 @@ Atunci:
     \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
 \]
 
-Mărimea $\frac{me^4}{8\varepsilon_0 h^2}$ este \emph{constanta lui Rydberg}, având valoarea $R = \SI{1,097373d7}{\per\meter}$.
+Mărimea $\frac{me^4}{8\varepsilon_0 h^2}$ este \emph{constanta lui Rydberg},
+având valoarea $R = \SI{1,097373d7}{\per\meter}$.
 
 Astfel, energia cuantificată a electronului pe un nivel energetic al atomului
 poate fi exprimată ca:
-\[ E_n = -\frac{Rch}{n^2} \]
+\[ \boxed{E_n = -\frac{Rch}{n^2}} \]
 
 Grupul de linii spectrale cu același $n_f$ formează o \emph{serie spectrală}.
 
 Pentru $n_i \rightarrow \infty$, numărul de undă este maxim, cu valoarea
 $\frac{R}{n^2}$, numită limita seriei.
+
+\emph{Inversele lungimilor de undă ale liniilor spectrale emise de atomul de
+hidrogen} sunt date de ecuația:
+\[ \tilde{\nu} = R \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) \]
+iar pentru \emph{atomii hidrogenoizi}, cu sarcina $Ze$ și un singur electron,
+de ecuația:
+\[ \tilde{\nu} = RZ^2 \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) \]
+
+\clearpage
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/tranzitii_electron}
+    \caption{Tranzițiile electronului în modelul Bohr al atomului de hidrogen}
+\end{wrapfigure}
+
+Cu mult înainte ca Bohr să elaboreze modelul atomic al hidrogenului, studiind
+liniile din vizibil ale atomului, Balmer a observat că lungimile de undă ale
+liniilor spectrale emise respectă anumite regularități.
+
+Rydberg a rearanjat \emph{relația empirică a lui Balmer}, pentru calculul
+lungimilor de undă:
+\[ \tilde{\nu} = \frac{1}{\lambda} = R\left(\frac{1}{2^2} - \frac{1}{n^2\right}) \]
+
+S-a obținut empiric aceeași valoare a lui $R$ ca în modelul atomic al lui Bohr.
+
+Seriile spectrale ale hidrogenului sunt redate în tabelul următor.
+
+Tranzițiile sunt ilustrate în fig. 8, și pot fi realizate direct sau în trepte.
+Numărul tranzițiilor posibile este egal cu $C_n^2 = \frac{(n-1)n}{2}$.
+
+\begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Denumirea seriei spectrale} & \boldmath$n_f$ & \boldmath$n_i$ &
+        \textbf{Domeniul spectral} & \textbf{Limita seriei} \\
+        \hline
+        Lyman & 1 & 2, 3, ... & ultraviolet & $R$ \\
+        \hline
+        Balmer & 2 & 3, 4, ... & vizibil & $R/4$ \\
+        \hline
+        Paschen & 3 & 4, 5, ... & infraroșu & $R/9$ \\
+        \hline
+        Brackett & 4 & 5, 6, ... & infraroșu & $R/16$ \\
+        \hline
+        Pfund & 5 & 6, 7, ... & infraroșu îndepărtat & $R/25$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection*{Aplicații ale spectroscopiei}
+
+Spectroscopia este o metodă comodă, precisă, și rapidă în analiza chimică, cu
+ajutorul acesteia fiind descoperite elementele cesiu, taliu, indiu, și galiu.
+
+Sursele moderne de iluminare, precum tuburile cu descărcare rapidă în vapori de
+sodiu sau mercur, sau lămpile fluorescente, au fost inventate pe baza studiilor
+spectroscopice.
+
+Ceasul atomic este instrumentul de măsurare a timpului cel mai precis, utilizat
+de exemplu la GPS. O secundă este egală cu 9192631770 perioade asociate
+tranziției între două niveluri energetice ale cesiului 133.
+
+Cele mai importante utilizări ale spectroscopiei au avut loc în astronomie, în
+studiul temperaturii, compoziției, și deplasării astrelor.
