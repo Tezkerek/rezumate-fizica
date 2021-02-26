@@ -164,3 +164,108 @@ diametrele atomice estimate prin alte metode.
 
 Conform \eqref{eq:5}, distanța dintre două orbite consecutive crește odată cu
 îndepărtarea de nucleu.
+
+Orice sistem fizic tinde spre starea echilibru stabil, care corespunde energiei
+cele mai joase. Energia sistemului nucleu-electron fiind negativă, starea
+energetică cea mai joasă se atinge când această energie are valoarea absolută
+cea mai mare, deci pentru $n = 1$.
+
+Această stare, de energie minimă, se numește \emph{stare fundamentală} sau
+\emph{normală}.
+
+În cazul atomului de hidrogen, din relația \eqref{eq:4} rezultă:
+\[ E_1 = -\frac{me^4}{8h^2\varepsilon_0^2} = \SI{-13,6}{\electronvolt} \]
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{fig/niveluri_energie_hidrogen}
+    \caption{Nivelurile de energie ale atomului de hidrogen}
+\end{wrapfigure}
+
+În fig. 7, liniile orizontale indică \emph{nivelurile de energie} (valorile
+energiei totale).
+
+Originea se află în $E = 0$, pentru numere cuantice foarte mari, când
+electronul este depărtat de nucleu și pierde legătura cu acesta (ionizare).
+
+Deasupra $E = 0$ pot fi reprezentate valorile pozitive ale energiei, ce
+corespund mișcării libere a electronului și care nu sunt cuantificate, fiind
+posibilă orice valoare. \emph{Stările legate} ale electronului în atom sunt
+exprimate prin energiile negative, reprezentate sub $E = 0$.
+
+Se observă că nivelurile cuantificate se strâng spre 0.
+\[ E_n = \frac{E_1}{n^2} \]
+
+Relațiile deduse sunt aplicabile atomului de hidrogen și atomilor hidrogenoizi
+(cu un singur electron): He$^+$ (o dată ionizat), Li$^{++}$ (de două ori
+ionizat), Be$^{+++}$ (de trei ori ionizat) etc.
+
+În general, pentru atomii hidrogenoizi, unde $Z$ este numărul atomic:
+\[
+    E_n = -\frac{mZ^2e^4}{8h^2\varepsilon_0^2}
+    = -13,6 \cdot \frac{Z^2}{n^2} ~ \si{\electronvolt}
+\]
+
+\subsection{Seriile spectrale ale hidrogenului și ale atomilor hidrogenoizi}
+
+Electronul poate trece din starea fundamentală într-o stare excitată prin
+absorbția unui foton. Această stare excitată nu este stabilă.
+
+Un atom se dezexcită în \SI{d-8}{\second}, energia înmagazinată fiind radiată
+sub formă de energie a unei unde electromagnetice de frecvență bine
+determinată, acoperind întregul domeniu spectral, de la infraroșu la
+ultraviolet.
+
+Energia fotonului emis sau absorbit la trecerea de la o stare staționară la
+alta este dată de postulatul al II-lea al lui Bohr.
+
+Urmează studiul spectrelor de emisie -- trecerea electronului dintr-o stare
+excitată într-o stare de energie mai joasă, la emiterea unui foton de energie
+$h\nu$ (prin dezexcitare).
+
+Ne vom referi la spectrul de emisie al atomului de hidrogen (H), care este un
+spectru de linii.
+
+Fie $n-i$ numărul cuantic al unei stări excitate oarecare, și $n_f$ numărul
+cuantic al stării de energie mai joase, pe care se întoarce electronul după
+emisie.
+
+Energia inițială este:
+\[ E_i = -\frac{me^4}{8\varepsilon_0 h^2} \frac{1}{n_i^2} \]
+
+Energia finală este:
+\[ E_f = -\frac{me^4}{8\varepsilon_0 h^2} \frac{1}{n_f^2} \]
+
+Energia fotonului emis, $h\nu$, va fi egală cu:
+\[
+    E_i - E_f = h\nu
+    = -\frac{me^4}{8\varepsilon_0 h^2} \frac{1}{n_i^2}
+    + \frac{me^4}{8\varepsilon_0 h^2} \frac{1}{n_f^2}
+\]
+
+Frecvența liniei emise, $\nu$, va fi:
+\[
+    \nu = \frac{me^4}{8\varepsilon_0 h^2}
+    \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
+\]
+
+Introducem notația pentru \emph{numărul de undă} $\tilde{\nu}$ -- numărul de
+lungimi de undă cuprinse în intervalul unitate:
+\[ \tilde{\nu} = \frac{\nu}{c} = \frac{1}{cT} = \frac{1}{\lambda} \]
+
+Atunci:
+\[
+    \tilde{\nu} = \frac{me^4}{8\varepsilon_0 h^2}
+    \left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right)
+\]
+
+Mărimea $\frac{me^4}{8\varepsilon_0 h^2}$ este \emph{constanta lui Rydberg}, având valoarea $R = \SI{1,097373d7}{\per\meter}$.
+
+Astfel, energia cuantificată a electronului pe un nivel energetic al atomului
+poate fi exprimată ca:
+\[ E_n = -\frac{Rch}{n^2} \]
+
+Grupul de linii spectrale cu același $n_f$ formează o \emph{serie spectrală}.
+
+Pentru $n_i \rightarrow \infty$, numărul de undă este maxim, cu valoarea
+$\frac{R}{n^2}$, numită limita seriei.
